@@ -1,0 +1,118 @@
+.welcome-post
+    background-image: url("../img/post/bg-post.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+
+article
+    border-bottom: 1px solid #b7b7b7
+    .bold-text
+        padding: 65px 50px
+        margin: 40px 0 55px 0
+        color: #3e3d3d
+        font: 700 16px/25px "Crimson Text"
+        font-style: italic
+        letter-spacing: 1.6px
+        border: 2px solid #a8a8a8
+
+.social
+    padding: 20px 0
+    display: flex
+    justify-content: center
+    border-bottom: 1px solid #b7b7b7
+    li
+        padding: 5px
+        margin-right: 10px
+        width: 31px
+        height: 31px
+        border: 1px solid #818181
+        border-radius: 50px
+        text-align: center
+    i
+        color: #818181
+.comments
+    padding: 60px 0
+    img
+        border-radius: 50px
+
+    h6
+        color: #3e3d3d
+        font: 700 13px/18px Montserrat
+        text-transform: uppercase
+        letter-spacing: 1.47px
+    .comments1, .comments2
+        display: flex
+        margin-bottom: 35px
+    .comments2
+        margin-left: 70px
+
+
+    .autor-comment
+        margin-right: 30px
+    .text-comment
+        border-bottom: 1px solid #b7b7b7
+    .reply
+        float: right
+        margin-top: 45px
+        margin-bottom: 15px
+
+
+h5
+    color: #3e3d3d
+    font: 700 16px/18px Montserrat
+    text-transform: uppercase
+    letter-spacing: 1.81px
+    margin-bottom: 45px
+
+.comment-form
+    .form-box, .form__item, textarea
+        color: #949494
+        font: 14px/21px "Crimson Text"
+        font-style: italic
+        letter-spacing: 1.4px
+
+    .form-elem
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+
+    .form__item, textarea
+        margin-top: 20px
+        margin-right: 15px
+        padding: 25px 0 25px 25px
+        background-color: transparent
+        width: 350px
+        height: 56px
+        border: 2px solid #464646
+    textarea
+        width: 720px
+        height: 97px
+        resize: none
+    .form-btn
+        width: 135px
+        height: 39px
+        background-color: #464646
+        color: #ffffff
+        cursor: pointer
+
+@media screen and (max-width: 1200px)
+    .comment-form
+        display: flex
+        flex-direction: column
+        align-items: center
+
+@media screen and (max-width: 768px)
+    .comments
+        .comments2
+            margin-left: 0
+
+@media screen and (max-width: 576px)
+    .comments
+        .comments1, .comments2
+            display: flex
+            flex-direction: column
+            align-items: center
+    .comment-form
+        .form__item, textarea
+            width: 250px
+            height: 56px
+       

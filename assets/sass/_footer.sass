@@ -25,7 +25,7 @@ footer
         display: flex
     .form-box
         padding-top: 70px
-    form, .form__item, textarea
+    .form-box, .form__item, textarea
         color: #949494
         font: 14px/21px "Crimson Text"
         font-style: italic
@@ -52,6 +52,8 @@ footer
         width: 135px
         height: 39px
         background-color: #464646
+        color: #ffffff
+        cursor: pointer
     .footer-bottom
         border-top: 1px solid #3e3e3e
         p
@@ -63,45 +65,49 @@ footer
 
 
 @media screen and (max-width: 1200px)
+    .footer
+        justify-content: center
     form
         max-width: 400px
+        margin-bottom: 20px
     textarea
         max-width: 370px
 @media screen and (max-width: 992px)
-    form
-        max-width: 300px
-    .form__item
-        max-width: 300px
-    textarea
-        max-width: 300px
-@media screen and (max-width: 768px)
     footer
-        max-width: 400px
-        margin: 0 auto
-        padding: 20px
-    .footer
-        display: flex
-        flex-wrap: wrap
-    form
-        max-width: 300px
-        text-align: center
-    .form__item
-        max-width: 250px
-    textarea
-        max-width: 250px
-    .form-btn
-        margin-bottom: 20px
-        width: 95px
-        height: 20px
-@media (max-width: 320px)
+        padding-left: 20px
+        padding-right: 20px
+        .footer
+            flex-wrap: wrap
+            flex-direction: column
+            align-items: center
+        .footer-left
+            text-align: center
+            .soc-btn
+                justify-content: center
+                margin-bottom: 0px
+        .form-box
+            padding-top: 10px
+            text-align: center
+        .footer-bottom
+            text-align: center
+
+@media screen and (max-width: 576px)
     footer
-        max-width: 300px
-        margin: 0 auto
-        padding: 0px
-    .form-box
-        padding: 10px
-        margin: 0 auto
-    .form__item
-        max-width: 200px
-    textarea
-        max-width: 200px
+        .form-box
+            max-width: 300px
+            .form-elem
+                padding: 0
+            .form__item, textarea
+                width: 300px
+
+@media screen and (max-width: 320px)
+    footer
+        .form-box
+            max-width: 200px
+            .form-elem
+                padding: 0
+            .form__item, textarea
+                width: 200px
+            .form-btn
+                width: 100px
+                height: 25px

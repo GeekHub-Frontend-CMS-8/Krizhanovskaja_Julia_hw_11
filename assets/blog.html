@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -53,6 +54,9 @@
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Blog2</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
@@ -60,30 +64,37 @@
             </nav>
             <ul class="soc-btn">
                 <li>
-                    <i class="fab fa-facebook-square"></i>
+                    <a href="https://www.facebook.com">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fab fa-twitter"></i>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </li>
                 <li>
-                    <i class="fab fa-behance"></i>
+                    <a href="https://www.behance.net">
+                        <i class="fab fa-behance"></i>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
-<section class="blog_sidebar">
+<section class="welcome-blog">
     <div class="wrapper">
-        <div class="welcome-blog">
-            <h1>
-                BLOG WITH SIDEBAR
-            </h1>
-            <p>
-                Home > Blog
-            </p>
-        </div>
-        <div class="content-blog">
-            <div class="article-box">
+        <h1>
+            BLOG WITH SIDEBAR
+        </h1>
+        <p>
+            Home > Blog
+        </p>
+    </div>
+</section>
+<div class="content-blog">
+    <div class="wrapper">
+        <div class="article-box">
                 <article>
                     <img src="img/blog/article_img1.png" alt="img">
                     <h3>
@@ -127,9 +138,9 @@
                         Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
                         ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                     </p>
-                    <button class="button">
-                        Read More
-                    </button>
+                    <a href="post.html" class="post-link">
+                            Read More
+                    </a>
                 </article>
                 <article>
                     <img src="img/blog/article_img2.jpg" alt="img">
@@ -174,9 +185,9 @@
                         Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
                         ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                     </p>
-                    <button class="button">
+                    <a href="post.html" class="post-link">
                         Read More
-                    </button>
+                    </a>
                 </article>
                 <article>
                     <img src="img/blog/article_img3.jpg" alt="img">
@@ -221,9 +232,9 @@
                         Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
                         ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                     </p>
-                    <button class="button">
+                    <a href="post.html" class="post-link">
                         Read More
-                    </button>
+                    </a>
                 </article>
                 <article>
                     <img src="img/blog/article_img4.jpg" alt="img">
@@ -268,9 +279,9 @@
                         Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
                         ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                     </p>
-                    <button class="button">
+                    <a href="post.html" class="post-link">
                         Read More
-                    </button>
+                    </a>
                 </article>
                 <article>
                     <img src="img/blog/article_img5.jpg" alt="img">
@@ -315,165 +326,243 @@
                         Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
                         ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                     </p>
-                    <button class="button">
+                    <a href="post.html" class="post-link">
                         Read More
-                    </button>
+                    </a>
                 </article>
+                <div class="blog-btn">
+                    <button class="blog-btn-elem">
+                        1
+                    </button>
+                    <button class="blog-btn-elem">
+                        2
+                    </button>
+                    <button class="blog-btn-elem">
+                        3
+                    </button>
+                    <button class="blog-btn-elem">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
-            <aside>
-                <ul class="latest-post">
-                    <h5>
-                        Latest POSTS
-                    </h5>
-                    <li class="latest-post-elem">
-                        <img src="../img/blog/Image_aside1.jpg" alt="">
-                        <div>
-                            <h6>
-                                sit amet pretium odio magna ege
-                            </h6>
-                            <p>
-                                Nullam lobortis, turpis lobortis placerat vehicula,
-                                ipsum
-                            </p>
-                        </div>
-                    </li>
-                    <li class="latest-post-elem">
-                        <img src="../img/blog/Image_aside2.jpg" alt="">
-                        <div>
-                            <h6>
-                                sit amet pretium odio magna ege
-                            </h6>
-                            <p>
-                                Nullam lobortis, turpis lobortis placerat vehicula,
-                                ipsum
-                            </p>
-                        </div>
-                    </li>
-                    <li class="latest-post-elem">
-                        <img src="../img/blog/Image_aside3.jpg" alt="">
-                        <div>
-                            <h6>
-                                sit amet pretium odio magna ege
-                            </h6>
-                            <p>
-                                Nullam lobortis, turpis lobortis placerat vehicula,
-                                ipsum
-                            </p>
-                        </div>
-                    </li>
-                    <li class="latest-post-elem">
-                        <img src="img/blog/Image_aside4.jpg" alt="">
-                        <div>
-                            <h6>
-                                sit amet pretium odio magna ege
-                            </h6>
-                            <p>
-                                Nullam lobortis, turpis lobortis placerat vehicula,
-                                ipsum
-                            </p>
-                        </div>
-                    </li>
 
-                </ul>
-                <ul class="categories">
-                    <h5>
-                        categories
-                    </h5>
-                    <li class="latest-post-elem">
-                        <p>
-                            Photography
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            Website Design
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            Branding
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            Flyers
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            Uncategories
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            Category 22
-                        </p>
-                    </li>
-                </ul>
-                <ul class="archives">
-                    <h5>
-                        archives
-                    </h5>
-                    <li class="latest-post-elem">
-                        <p>
-                            september 2015
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            october 2015
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            november 2015
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            december 2015
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            january 2016
-                        </p>
-                    </li>
-                    <li class="latest-post-elem">
-                        <p>
-                            february 2015
-                        </p>
-                    </li>
-                </ul>
-                <h5>
-                    FLICKR PHOTOS
-                </h5>
-                <ul class="photos">
-                    <li>
-                        <img src="img/blog/Image_aside1.jpg" alt="">
+        <aside class="sidebar">
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control " placeholder="Search"
+                       aria-label="Recipient's username"
+                       aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button"
+                            id="button-addon2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <h5>
+                Latest POSTS
+            </h5>
+            <ul class="latest-post">
+                    <li >
+                        <a href="post.html" class="latest-post-elem">
+                            <img src="../img/blog/Image_aside1.jpg" alt="">
+                            <div>
+                                <h6>
+                                    sit amet pretium odio magna ege
+                                </h6>
+                                <p>
+                                    Nullam lobortis, turpis lobortis placerat vehicula,
+                                    ipsum
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/blog/Image_aside2.jpg" alt="">
+                        <a href="post.html" class="latest-post-elem">
+                            <img src="../img/blog/Image_aside2.jpg" alt="">
+                            <div>
+                                <h6>
+                                    sit amet pretium odio magna ege
+                                </h6>
+                                <p>
+                                    Nullam lobortis, turpis lobortis placerat vehicula,
+                                    ipsum
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/blog/Image_aside3.jpg" alt="">
+                        <a href="post.html" class="latest-post-elem">
+                            <img src="../img/blog/Image_aside3.jpg" alt="">
+                            <div>
+                                <h6>
+                                    sit amet pretium odio magna ege
+                                </h6>
+                                <p>
+                                    Nullam lobortis, turpis lobortis placerat vehicula,
+                                    ipsum
+                                </p>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/blog/Image_aside4.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/blog/Image_aside4.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/blog/Image_aside1.jpg" alt="">
+                        <a href="post.html" class="latest-post-elem">
+                            <img src="img/blog/Image_aside4.jpg" alt="">
+                            <div>
+                                <h6>
+                                    sit amet pretium odio magna ege
+                                </h6>
+                                <p>
+                                    Nullam lobortis, turpis lobortis placerat vehicula,
+                                    ipsum
+                                </p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-            </aside>
-        </div>
+
+            <h5>
+                categories
+            </h5>
+
+            <ul class="categories">
+                    <li>
+                        <a href="#">
+                            <p>
+                                Photography
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                Website Design
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                Branding
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                Flyers
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                Uncategories
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                Category 22
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+
+            <h5>
+                archives
+            </h5>
+
+            <ul class="archives">
+                    <li>
+                        <a href="#">
+                            <p>
+                                september 2015
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                october 2015
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                november 2015
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                december 2015
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                january 2016
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                february 2015
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+
+            <h5>
+                FLICKR PHOTOS
+            </h5>
+
+            <ul class="photos">
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/blog/Image_aside1.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+        </aside>
     </div>
-</section>
+</div>
+
 <footer>
-    <div class="container">
+    <div class="wrapper">
         <div class="footer">
             <div class="footer-left">
                 <img src="img/Logo_footer.png" alt="logo">
@@ -508,8 +597,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="form-box">
-                <form action="URL" method="post">
+                <form action="URL" method="post" class="form-box">
                     <ul class="form-elem">
                         <li>
                             <input class="form__item" type="text" name="name" placeholder="Name">
@@ -529,7 +617,6 @@
                     </ul>
                     <button class="form-btn">Submit</button>
                 </form>
-            </div>
         </div>
         <div class="footer-bottom">
             <p>
