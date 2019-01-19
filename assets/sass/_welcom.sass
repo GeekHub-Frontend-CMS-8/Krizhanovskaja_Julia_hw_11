@@ -1,13 +1,14 @@
 .welcom
-    padding: 200px 0
     text-align: center
     position: relative
-    background-image: url("../img/welcome/background.jpg")
-    background-size: cover
-    background-repeat: no-repeat
+    .heading
+        position: absolute
+        right: 478px
+        top: 120px
+
     p
         color: #ffffff
-        font: 400 14px/50px "Crimson Text - Roman"
+        font: 400 14px/30px "Crimson Text - Roman"
         letter-spacing: 1.4px
     h1
         color: #ffffff
@@ -19,5 +20,35 @@
         background-position: center
     .arrow
         position: absolute
-        left: 650px
-        bottom: 157px
+        left: 174px
+        bottom: -42px
+
+@media screen and (max-width: 1200px)
+    .welcom
+        .heading
+            right: 405px
+
+@media screen and (max-width: 992px)
+    .welcom
+        .heading
+            right: 325px
+
+@media screen and (max-width: 768px)
+    .welcom
+        .heading
+            right: 230px
+            top: 45px
+            p
+                font: 400 12px/1"Crimson Text - Roman"
+            h1
+                font: 400 30px/150px Amsdam
+        .arrow
+            left: 140px
+@media screen and (max-width: 576px)
+    .welcom
+        .heading
+            right: 150px
+        p
+            font: 400 8px/1"Crimson Text - Roman"
+            h1
+                font: 400 20px/1 Amsdam
