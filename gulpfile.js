@@ -22,7 +22,13 @@ gulp.task("html", function () {
 		.pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("watch", [ 'sass', "html", 'img'], function () {
+gulp.task("js", function () {
+	return gulp.src("assets/**/*.js")
+		.pipe(gulp.dest("build"))
+		.pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task("watch", [ 'sass', "html", 'img', 'js'], function () {
 	browserSync.init({
 		server: "./build",
 		notify: false,
@@ -32,5 +38,6 @@ gulp.task("watch", [ 'sass', "html", 'img'], function () {
     });
     gulp.watch('assets/sass/**/*.sass', ["sass"]);
     gulp.watch('assets/**/*.html' , ['html']);
+    gulp.watch('assets/**/*.js' , ['js']);
 	gulp.watch('assets/img/**/*', ["img"]);
 });
