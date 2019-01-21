@@ -13,6 +13,9 @@
         border-radius: 50%
         text-align: center
         padding-top: 25px
+        position: relative
+        clear: both
+        margin: 0 auto
     .timeline_elem1
         width: 54px
         height: 54px
@@ -31,23 +34,21 @@
             height: 100%
             width: 2px
             background: #3e3d3d
-            left: 0
-
-
-    h2
-
-        max-width: 6em
-        margin: 0 auto 1em
-        padding: 0.5em
-        text-align: center
-        position: relative
-        clear: both
-
+            top: 70px
 
     ul
         list-style: none
         padding: 0 0 0 1em
         z-index: 1
+
+    time
+        color: #3e3d3d
+        font: 400 11px/1 Montserrat
+
+    p
+        color: #3e3d3d
+        font: 400 14px/21px "Crimson Text - Roman"
+        letter-spacing: 1.4px
 
 
     li
@@ -67,58 +68,49 @@
             left: -1em
             top: 0
 
-        h3
+
+    //h2
+
+        max-width: 6em
+        margin: 0 auto 1em
+        padding: 0.5em
+
+    //h3
             margin-top: 0
 
 
-        time
-            color: #3e3d3d
-            font: 400 11px/1 Montserrat
-
-
-        p
-            color: #3e3d3d
-            font: 400 14px/21px "Crimson Text - Roman"
-            letter-spacing: 1.4px
-
-
-
-//@media screen and (min-width: 40em)
-//.container
-    max-width: 1000px
-    margin: 0 auto
-
-
-//.timeline
-    &:before
-        left: 50%
-
-    ul
-        padding-left: 0
-        max-width: 700px
+@media screen and (min-width: 40em)
+    .container
+        max-width: 1000px
         margin: 0 auto
 
 
-    li
-        width: 42%
-
-
-    li:nth-child(even)
-        float: right
-        margin-top: 2em
-
-    li:nth-child(odd)
-        float: left
-
+    .timeline
         &:before
-            border-top: 1em solid $gray
-            border-right: 1em solid transparent
-            right: -1em
-            left: auto
+            left: 50%
 
+        ul
+            padding-left: 0
+            max-width: 700px
+            margin: 0 auto
 
+        li
+            width: 47%
 
-    li:nth-of-type(2n+1)
-        clear: both
+        li:nth-child(even)
+            float: right
+            margin-top: 2em
+
+        li:nth-child(odd)
+            float: left
+
+            &:before
+                border-top: 1em solid $gray
+                border-right: 1em solid transparent
+                right: -1em
+                left: auto
+
+        li:nth-of-type(2n+1)
+            clear: both
 
 
